@@ -14,4 +14,10 @@ public class Row {
     public void addRow(Double n){
         data.add(n);
     }
+    public int getColumns(){
+        return data.size();
+    }
+    public void addRowList(List<Double> data){
+        this.data=data;
+    }
 }
