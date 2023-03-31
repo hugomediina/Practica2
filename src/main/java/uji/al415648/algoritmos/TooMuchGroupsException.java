@@ -1,4 +1,4 @@
-﻿package uji.al415648.algoritmos;
+package uji.al415648.algoritmos;
 
 public class TooMuchGroupsException extends Exception{
     public TooMuchGroupsException(){

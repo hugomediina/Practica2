@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d3c5ce1-dc98-4f4b-b606-9bd37365bb6a" name="Changes" comment="Clases ordenadas">
+    <list default="true" id="1d3c5ce1-dc98-4f4b-b606-9bd37365bb6a" name="Changes" comment="Kmeans creado">
+      <change afterPath="$PROJECT_DIR$/lib/iris.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/iris_without_labels.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/miles_dollars.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/uji/al415648/algoritmos/RecSys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/uji/al415648/algoritmos/KNNTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/uji/al415648/algoritmos/KmeansTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/uji/al415648/datos/TableTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uji/al415648/algoritmos/Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uji/al415648/algoritmos/Algorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uji/al415648/algoritmos/KNN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uji/al415648/algoritmos/KNN.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uji/al415648/algoritmos/Kmeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uji/al415648/algoritmos/Kmeans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uji/al415648/datos/Row.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uji/al415648/datos/Row.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uji/al415648/algoritmos/TooMuchGroupsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uji/al415648/algoritmos/TooMuchGroupsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uji/al415648/lectura/CSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uji/al415648/lectura/CSV.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +27,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -40,22 +51,108 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/hugom/Downloads/untitled&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/hugom/Downloads/untitled",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\hugom\IdeaProjects\Practica 2\src\main\java\uji\al415648" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hugom\IdeaProjects\Practica 2\src\test\java\uji\al415648\algoritmos" />
+      <recent name="C:\Users\hugom\IdeaProjects\Practica 2\lib" />
+      <recent name="C:\Users\hugom\IdeaProjects\Practica 2" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="uji.al415648.datos" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="uji.al415648.algoritmos" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.All in Practica2">
+    <configuration name="All in Practica2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KNNTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uji.al415648.datos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uji.al415648.algoritmos" />
+      <option name="MAIN_CLASS_NAME" value="uji.al415648.algoritmos.KNNTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KmeansTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uji.al415648.algoritmos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uji.al415648.algoritmos" />
+      <option name="MAIN_CLASS_NAME" value="uji.al415648.algoritmos.KmeansTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KmeansTest.estimate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uji.al415648.algoritmos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uji.al415648.algoritmos" />
+      <option name="MAIN_CLASS_NAME" value="uji.al415648.algoritmos.KmeansTest" />
+      <option name="METHOD_NAME" value="estimate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KmeansTest.exceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uji.al415648.algoritmos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uji.al415648.algoritmos" />
+      <option name="MAIN_CLASS_NAME" value="uji.al415648.algoritmos.KmeansTest" />
+      <option name="METHOD_NAME" value="exceptionTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Practica 2" />
       <method v="2">
@@ -69,6 +166,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in Practica2" />
+        <item itemvalue="JUnit.KNNTest" />
+        <item itemvalue="JUnit.KmeansTest" />
+        <item itemvalue="JUnit.KmeansTest.exceptionTest" />
+        <item itemvalue="JUnit.KmeansTest.estimate" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -100,12 +206,20 @@
       <option name="project" value="LOCAL" />
       <updated>1680002461086</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Kmeans creado">
+      <created>1680190289106</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680190289106</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Comprobando errores" />
     <MESSAGE value="Clases ordenadas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clases ordenadas" />
+    <MESSAGE value="Kmeans creado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kmeans creado" />
   </component>
 </project>

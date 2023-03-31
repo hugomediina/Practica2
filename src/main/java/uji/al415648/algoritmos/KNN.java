@@ -5,7 +5,7 @@ import uji.al415648.datos.TableWithLabels;
 
 import java.util.List;
 
-public class KNN {
+public class KNN implements Algorithm<TableWithLabels>{
     private TableWithLabels table;
     public void train(TableWithLabels data){
         this.table=data;

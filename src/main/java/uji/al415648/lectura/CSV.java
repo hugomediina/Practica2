@@ -13,10 +13,10 @@ public class CSV {
     public Table readTable(String file) throws FileNotFoundException {
         String separator= File.separator;
         Table table=new Table();
-        Scanner sc=new Scanner(new File("src"+separator+file));
+        Scanner sc=new Scanner(new File("lib"+separator+file));
         int count=0;
         while(sc.hasNext()){
-            String[] choppedLine = sc.next().split(",");
+            String[] choppedLine = sc.nextLine().split(",");
             if(count==0){
                 table.addHeaders(choppedLine);
                 count++;
@@ -36,7 +36,7 @@ public class CSV {
     public TableWithLabels readTableWithLabels(String file) throws FileNotFoundException{
         String separator=File.separator;
         TableWithLabels table= new TableWithLabels();
-        Scanner sc = new Scanner(new File("src"+separator+file));
+        Scanner sc = new Scanner(new File("lib"+separator+file));
         int count = 0;
         int numberClass=0;
         while (sc.hasNext()){

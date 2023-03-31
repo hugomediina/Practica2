@@ -5,7 +5,7 @@ import uji.al415648.datos.Table;
 
 import java.util.*;
 
-public class Kmeans implements Algorithm<Table,Double>{
+public class Kmeans implements Algorithm<Table>{
     private int numClusters;
     private int numIterations;
     private long seed;
@@ -28,23 +28,25 @@ public class Kmeans implements Algorithm<Table,Double>{
         for(int j=0;j<numIterations;j++) {
             for (int i = 0; i < datos.getRows().size(); i++) {
                 int id = estimate(datos.getRowAt(i).getData());
-                groups.get(id).add(datos.getRowAt(i));
+                if(!groups.get(id).contains(datos.getRowAt(i)))
+                    groups.get(id).add(datos.getRowAt(i));
             }
             points.clear();
             for (int i = 0; i < numClusters; i++) {
                 points.add(meanCentroide(groups.get(i)));
+                if(j!=numIterations-1){
+                    groups.get(i).clear();
+                }
             }
         }
     }
-
-
-
     @Override
     public Integer estimate(List<Double> dato){
         int id=-1,count=0;
-        double distMin=Double.MIN_VALUE;
+        double distMin=Double.MAX_VALUE;
+        KNN myKNN=new KNN();
         for(Row element:points){
-            double distActual=distance(dato,element.getData());
+            double distActual=myKNN.distance(dato,element.getData());
             if(distMin > distActual){
                 distMin=distActual;
                 id=count;
@@ -52,13 +54,6 @@ public class Kmeans implements Algorithm<Table,Double>{
             count++;
         }
         return id;
-    }
-    public double distance(List<Double> dataSource, List<Double> data){
-        double amount=0;
-        for(int i=0;i<dataSource.size();i++){
-            amount+=Math.abs(dataSource.get(i)-data.get(i));
-        }
-        return amount;
     }
     private void makeCentroide(Table datos){
         Random random=new Random(seed);
@@ -73,7 +68,7 @@ public class Kmeans implements Algorithm<Table,Double>{
             }
         }
     }
-    private Row meanCentroide(List<Row> rows) { //REVISAR OPTIMIZACIÓN
+    private Row meanCentroide(List<Row> rows) {
         Row centroide=new Row();
         List<Double> auxiliar=new ArrayList<>();
         for(int i=0;i<rows.get(0).getColumns();i++){
@@ -90,5 +85,13 @@ public class Kmeans implements Algorithm<Table,Double>{
         }
         centroide.addRowList(auxiliar);
         return centroide;
+    }
+
+    public List<Row> getPoints() {
+        return points;
+    }
+
+    public Map<Integer, List<Row>> getGroups() {
+        return groups;
     }
 }
