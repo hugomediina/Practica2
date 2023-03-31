@@ -4,20 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d3c5ce1-dc98-4f4b-b606-9bd37365bb6a" name="Changes" comment="Kmeans creado">
-      <change afterPath="$PROJECT_DIR$/lib/iris.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/iris_without_labels.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/miles_dollars.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uji/al415648/algoritmos/RecSys.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/uji/al415648/algoritmos/KNNTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/uji/al415648/algoritmos/KmeansTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/uji/al415648/datos/TableTest.java" afterDir="false" />
+    <list default="true" id="1d3c5ce1-dc98-4f4b-b606-9bd37365bb6a" name="Changes" comment="Comenzamos con el RecSys">
+      <change afterPath="$PROJECT_DIR$/lib/songs_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/songs_test_names.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/songs_test_withoutnames.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/songs_train.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/songs_train_names.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/songs_train_withoutnames.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/uji/al415648/algoritmos/SongRecSys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/uji/al415648/datos/TableWithLabelsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uji/al415648/algoritmos/Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uji/al415648/algoritmos/Algorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uji/al415648/algoritmos/KNN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uji/al415648/algoritmos/KNN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uji/al415648/algoritmos/Kmeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uji/al415648/algoritmos/Kmeans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uji/al415648/algoritmos/TooMuchGroupsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uji/al415648/algoritmos/TooMuchGroupsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uji/al415648/lectura/CSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uji/al415648/lectura/CSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uji/al415648/algoritmos/RecSys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uji/al415648/algoritmos/RecSys.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +54,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/Users/hugom/Downloads/untitled",
+    "last_opened_file_path": "C:/Users/hugom/IdeaProjects/Practica 2/src/test/java/uji/al415648/algoritmos",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -65,11 +62,13 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hugom\IdeaProjects\Practica 2\src\test\java\uji\al415648\algoritmos" />
       <recent name="C:\Users\hugom\IdeaProjects\Practica 2\src\main\java\uji\al415648" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\hugom\IdeaProjects\Practica 2\src\test\java\uji\al415648\algoritmos" />
       <recent name="C:\Users\hugom\IdeaProjects\Practica 2\lib" />
+      <recent name="C:\Users\hugom\IdeaProjects\Practica 2\src\test\java\uji\al415648\datos" />
+      <recent name="C:\Users\hugom\IdeaProjects\Practica 2\src\test\java\uji\al415648\algoritmos" />
       <recent name="C:\Users\hugom\IdeaProjects\Practica 2" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -82,7 +81,20 @@
       <recent name="uji.al415648.algoritmos" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in Practica2">
+  <component name="RunManager" selected="Application.SongRecSys">
+    <configuration name="SongRecSys" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="uji.al415648.algoritmos.SongRecSys" />
+      <module name="Practica2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uji.al415648.algoritmos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in Practica2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practica2" />
       <option name="PACKAGE_NAME" value="" />
@@ -121,22 +133,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KmeansTest.estimate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Practica2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uji.al415648.algoritmos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="uji.al415648.algoritmos" />
-      <option name="MAIN_CLASS_NAME" value="uji.al415648.algoritmos.KmeansTest" />
-      <option name="METHOD_NAME" value="estimate" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="KmeansTest.exceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practica2" />
       <extension name="coverage">
@@ -168,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SongRecSys" />
         <item itemvalue="JUnit.All in Practica2" />
         <item itemvalue="JUnit.KNNTest" />
         <item itemvalue="JUnit.KmeansTest" />
         <item itemvalue="JUnit.KmeansTest.exceptionTest" />
-        <item itemvalue="JUnit.KmeansTest.estimate" />
       </list>
     </recent_temporary>
   </component>
@@ -213,13 +209,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680190289106</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Comenzamos con el RecSys">
+      <created>1680289420678</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680289420678</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Comprobando errores" />
     <MESSAGE value="Clases ordenadas" />
     <MESSAGE value="Kmeans creado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kmeans creado" />
+    <MESSAGE value="Comenzamos con el RecSys" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comenzamos con el RecSys" />
   </component>
 </project>
