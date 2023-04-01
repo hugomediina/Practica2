@@ -23,6 +23,7 @@ class KmeansTest {
     private List<Double> list4;
     private List<Double> list5;
     private List<Double> list6;
+    private List<Double> list7;
     @BeforeEach
     void setUp() throws FileNotFoundException, TooMuchGroupsException {
         CSV myCSV = new CSV();
@@ -37,6 +38,7 @@ class KmeansTest {
         list4=new ArrayList<>();
         list5=new ArrayList<>();
         list6=new ArrayList<>();
+        list7=new ArrayList<>();
 
         list0.add(4.6);
         list0.add(3.6);
@@ -73,6 +75,10 @@ class KmeansTest {
         list6.add(3.3);
         list6.add(1.0);
 
+        list7.add(-5.0);
+        list7.add(-2.3);
+        list7.add(-3.3);
+        list7.add(-1.0);
 
     }
 
@@ -93,6 +99,7 @@ class KmeansTest {
         assertEquals(2,myKmeans.estimate(list4));
         assertEquals(1,myKmeans.estimate(list5));   //ESTAS DOS LINEAS HAN DE SER DE LA MISMA CLASE YA QUE SON CONSECUTIVAS
         assertEquals(1,myKmeans.estimate(list6));   //ESTAS DOS LINEAS HAN DE SER DE LA MISMA CLASE YA QUE SON CONSECUTIVAS
+        assertEquals(2,myKmeans.estimate(list7));
     }
     @Test
     void exceptionTest(){

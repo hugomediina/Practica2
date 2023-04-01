@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d3c5ce1-dc98-4f4b-b606-9bd37365bb6a" name="Changes" comment="Falta solucionar un error gordo">
+    <list default="true" id="1d3c5ce1-dc98-4f4b-b606-9bd37365bb6a" name="Changes" comment="Faltan pequeños cambios.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/uji/al415648/algoritmos/RecSysTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uji/al415648/algoritmos/Kmeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uji/al415648/algoritmos/Kmeans.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uji/al415648/algoritmos/RecSys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uji/al415648/algoritmos/RecSys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uji/al415648/datos/TableWithLabels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uji/al415648/datos/TableWithLabels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uji/al415648/algoritmos/KmeansTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uji/al415648/algoritmos/KmeansTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +53,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "Errors"
   }
 }]]></component>
@@ -75,7 +78,7 @@
       <recent name="uji.al415648.algoritmos" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SongRecSys">
+  <component name="RunManager" selected="JUnit.All in Practica2">
     <configuration name="SongRecSys" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="uji.al415648.algoritmos.SongRecSys" />
       <module name="Practica2" />
@@ -97,21 +100,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KNNTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Practica2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uji.al415648.datos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="uji.al415648.algoritmos" />
-      <option name="MAIN_CLASS_NAME" value="uji.al415648.algoritmos.KNNTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="KmeansTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practica2" />
       <extension name="coverage">
@@ -127,7 +115,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KmeansTest.exceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KmeansTest.estimate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practica2" />
       <extension name="coverage">
         <pattern>
@@ -137,8 +125,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="uji.al415648.algoritmos" />
       <option name="MAIN_CLASS_NAME" value="uji.al415648.algoritmos.KmeansTest" />
-      <option name="METHOD_NAME" value="exceptionTest" />
+      <option name="METHOD_NAME" value="estimate" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="uji.al415648 in Practica2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uji.al415648.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uji.al415648" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -158,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SongRecSys" />
         <item itemvalue="JUnit.All in Practica2" />
-        <item itemvalue="JUnit.KNNTest" />
         <item itemvalue="JUnit.KmeansTest" />
-        <item itemvalue="JUnit.KmeansTest.exceptionTest" />
+        <item itemvalue="JUnit.KmeansTest.estimate" />
+        <item itemvalue="Application.SongRecSys" />
+        <item itemvalue="JUnit.uji.al415648 in Practica2" />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680292739888</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Faltan pequeños cambios.">
+      <created>1680338122143</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680338122143</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -226,7 +235,8 @@
     <MESSAGE value="Kmeans creado" />
     <MESSAGE value="Comenzamos con el RecSys" />
     <MESSAGE value="Falta solucionar un error gordo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Falta solucionar un error gordo" />
+    <MESSAGE value="Faltan pequeños cambios." />
+    <option name="LAST_COMMIT_MESSAGE" value="Faltan pequeños cambios." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

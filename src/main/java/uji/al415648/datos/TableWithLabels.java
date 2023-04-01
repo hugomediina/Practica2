@@ -1,8 +1,5 @@
 package uji.al415648.datos;
 
-import uji.al415648.datos.RowWithLabel;
-import uji.al415648.datos.Table;
-
 import java.util.HashMap;
 import java.util.Map;
 

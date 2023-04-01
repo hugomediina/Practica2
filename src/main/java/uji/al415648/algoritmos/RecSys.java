@@ -1,5 +1,4 @@
 package uji.al415648.algoritmos;
-import uji.al415648.datos.Row;
 import uji.al415648.datos.Table;
 
 import java.util.*;
