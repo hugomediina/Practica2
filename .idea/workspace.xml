@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d3c5ce1-dc98-4f4b-b606-9bd37365bb6a" name="Changes" comment="Comenzamos con el RecSys">
-      <change afterPath="$PROJECT_DIR$/lib/songs_test.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/songs_test_names.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/songs_test_withoutnames.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/songs_train.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/songs_train_names.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/songs_train_withoutnames.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/uji/al415648/algoritmos/SongRecSys.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/uji/al415648/datos/TableWithLabelsTest.java" afterDir="false" />
+    <list default="true" id="1d3c5ce1-dc98-4f4b-b606-9bd37365bb6a" name="Changes" comment="Falta solucionar un error gordo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uji/al415648/algoritmos/Kmeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uji/al415648/algoritmos/Kmeans.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uji/al415648/algoritmos/RecSys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uji/al415648/algoritmos/RecSys.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -57,7 +50,8 @@
     "last_opened_file_path": "C:/Users/hugom/IdeaProjects/Practica 2/src/test/java/uji/al415648/algoritmos",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "Errors"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -216,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680289420678</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Falta solucionar un error gordo">
+      <created>1680292739888</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680292739888</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -224,6 +225,21 @@
     <MESSAGE value="Clases ordenadas" />
     <MESSAGE value="Kmeans creado" />
     <MESSAGE value="Comenzamos con el RecSys" />
-    <option name="LAST_COMMIT_MESSAGE" value="Comenzamos con el RecSys" />
+    <MESSAGE value="Falta solucionar un error gordo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Falta solucionar un error gordo" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="6" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -11,6 +11,7 @@ public class Kmeans implements Algorithm<Table>{
     private long seed;
     private Map<Integer,List<Row>> groups;
     private List<Row> points;
+    private Table globalData;
 
     public Kmeans(int numClusters,int numIterations, long seed){
         this.numClusters=numClusters;
@@ -22,9 +23,10 @@ public class Kmeans implements Algorithm<Table>{
 
     @Override
     public void train(Table datos) throws TooMuchGroupsException {
+        globalData=datos;
         if(numClusters>numIterations)
             throw new TooMuchGroupsException();
-        makeCentroide(datos);
+        makeCentroide();
         for(int j=0;j<numIterations;j++) {
             for (int i = 0; i < datos.getRows().size(); i++) {
                 int id = estimate(datos.getRowAt(i).getData());
@@ -55,12 +57,12 @@ public class Kmeans implements Algorithm<Table>{
         }
         return id;
     }
-    private void makeCentroide(Table datos){
+    private void makeCentroide(){
         Random random=new Random(seed);
         for(int i=0;i<numClusters;i++){
-            int numRandom=random.nextInt(datos.getRows().size()-1);
-            if(!points.contains(datos.getRowAt(numRandom))){
-                points.add(datos.getRowAt(numRandom));
+            int numRandom=random.nextInt(globalData.getRows().size()-1);
+            if(!points.contains(globalData.getRowAt(numRandom))){
+                points.add(globalData.getRowAt(numRandom));
                 groups.put(i,new ArrayList<>());
             }
             else{
@@ -71,7 +73,7 @@ public class Kmeans implements Algorithm<Table>{
     private Row meanCentroide(List<Row> rows) {
         Row centroide=new Row();
         List<Double> auxiliar=new ArrayList<>();
-        for(int i=0;i<rows.get(0).getColumns();i++){
+        for(int i=0;i<globalData.getHeaders().size();i++){
             auxiliar.add(0.0);
         }
         for(Row element:rows){
